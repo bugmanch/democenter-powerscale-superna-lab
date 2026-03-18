@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x # Display commands on screen
+
 isi zone zones create --name nas1 --create-path --auth-providers lsa-activedirectory-provider:DEMO.LOCAL /ifs/data/nas1
 isi zone zones create --name nas2 --create-path --auth-providers lsa-activedirectory-provider:DEMO.LOCAL /ifs/data/nas2
 
